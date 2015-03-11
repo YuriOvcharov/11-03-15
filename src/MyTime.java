@@ -7,19 +7,19 @@ public class MyTime {
     private int second;
 
     public MyTime(int hour, int minute, int second) {
-        if (hour>=0 || hour<=23){
+        if (hour>=0 && hour<=23){
             this.hour = hour;
         }
         else {
             throw new IllegalArgumentException("invalid hour!");
         }
-        if (minute>=0 || minute<=59){
+        if (minute>=0 && minute<=59){
             this.minute = minute;
         }
         else {
             throw new IllegalArgumentException("invalid minute!");
         }
-        if (second>=0 || second<=59){
+        if (second>=0 && second<=59){
             this.second = second;
         }
         else {
@@ -27,19 +27,19 @@ public class MyTime {
         }
     }
     public void setTime(int hour, int minute, int second) {
-        if (hour>=0 || hour<=23){
+        if (hour>=0 && hour<=23){
             this.hour = hour;
         }
         else {
             throw new IllegalArgumentException("invalid hour!");
         }
-        if (minute>=0 || minute<=59){
+        if (minute>=0 && minute<=59){
             this.minute = minute;
         }
         else {
             throw new IllegalArgumentException("invalid minute!");
         }
-        if (second>=0 || second<=59){
+        if (second>=0 && second<=59){
             this.second = second;
         }
         else {
@@ -48,7 +48,7 @@ public class MyTime {
     }
 
     public void setHour(int hour) {
-      if (hour>=0 || hour<=23){
+      if (hour>=0 && hour<=23){
           this.hour = hour;
       }
         else {
@@ -57,7 +57,7 @@ public class MyTime {
     }
 
     public void setMinute(int minute) {
-        if (minute>=0 || minute<=59){
+        if (minute>=0 && minute<=59){
             this.minute = minute;
         }
         else {
@@ -67,7 +67,7 @@ public class MyTime {
     }
 
     public void setSecond(int second) {
-        if (second>=0 || second<=59){
+        if (second>=0 && second<=59){
             this.second = second;
         }
         else {
